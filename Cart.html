@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Container styles */
+        .container {
+
+            max-width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .line-container {
+            position: relative;
+            width: 100%;
+            height: 100px;
+
+        }
+
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+        }
+
+        .line-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            color: #Fc6c85;
+            padding: 0 10px;
+            
+           
+        }
+
+        /* Box styles */
+        .box {
+            border: 1px solid #e8e5e5;
+            padding: 10px;
+            margin-bottom: 20px;
+            transition: height 0.5s ease;
+
+
+        }
+
+        .styled-text {
+            display: inline-block;
+            padding: 5px;
+            border: 1px none #000;
+            background-color: #Fc6c85;
+            color: #fcf6f6;
+            font-weight: bold;
+            font-size: 16px;
+
+        }
+
+
+        /* Hover effect for boxes */
+        .box:hover {
+            height: 100px;
+            border-color: #b32b3f;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Show dropdown on hover */
+        .box:hover .dropdown {
+            display: block;
+            display: flex;
+            flex: 1 20px;
+            gap: 10px;
+            margin-top: 2px;
+        }
+
+        /* Dropdown options styles */
+        .dropdown option {
+            padding: 5px;
+        }
+
+        .button {
+            background-color: #fc6c85;
+            color: #fff;
+            padding: 10px 98px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+
+
+
+
+        }
+
+        .container-1 {
+            width: 300px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .right-text {
+            position: absolute;
+            right: 0;
+            top: 6;
+
+        }
+
+        .line-through-text {
+            text-decoration: line-through;
+            position: relative;
+            color: #bcbaba;
+            font-size: small;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="line-container">
+            <div class="line"></div>
+            <div class="line-text">YaY!It's BOGO</div>
+        </div>
+
+        <div class="box">
+            <div class="container-1"><label><input type="radio" name="1 Unit"> <span> 1 Unit</span><span
+                        class="styled-text ">10% Off</span></label><span class="right-text ">$30.00 USD<br /><span
+                        class="line-through-text ">$24.00 USD</span></span></div>
+
+
+            <div class="d1">
+
+                <div class="dropdown">
+                    #1
+                    <select>
+                        <option value="size">size</option>
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+
+                    </select>
+
+                    <select>
+                        <option value="colour">colour</option>
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+
+
+                    </select>
+                </div>
+                <div class="dropdown">
+                    #2
+                    <select>
+                        <option value="size">size</option>
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+
+                    </select>
+                    <select>
+                        <option value="colour">colour</option>
+                        <option value="blue">blue</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+
+
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="container-1"><label><input type="radio" name="1 Unit"> <span> 2 Unit</span><span
+                        class="styled-text ">20% Off</span></label><span class="right-text ">$18.00 USD<br /><span
+                        class="line-through-text ">$24.00 USD</span></span></div>
+
+            <div class="dropdown">
+                #1
+
+                <select>
+                    <option value="size">size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+
+                </select>
+
+                <select>
+                    <option value="colour">colour</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+
+
+                </select>
+            </div>
+            <div class="dropdown">
+                #2
+                <select>
+                    <option value="size">size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+
+                </select>
+                <select>
+                    <option value="colour">colour</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+
+
+                </select>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="container-1"><label><input type="radio" name="1 Unit"> <span> 3 Unit</span><span
+                        class="styled-text ">30% Off</span></label><span class="right-text ">$24.00 USD<br /><span
+                        class="line-through-text ">$24.00 USD</span></span></div>
+            <div class="dropdown">
+                #1
+                <select>
+                    <option value="size">size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+
+                </select>
+
+                <select>
+                    <option value="colour">colour</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+
+
+                </select>
+            </div>
+            <div class="dropdown">
+                #2
+                <select>
+                    <option value="size">size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+
+                </select>
+                <select>
+                    <option value="colour">colour</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+
+
+                </select>
+            </div>
+        </div>
+        <div class="container-1"> <span> Free Delivery</span>
+            <span class="right-text ">Total:$18.00 USD</span>
+        </div>
+        <div class="button">+ Add To Cart</div>
+
+    </div>
+
+</body>
+
+</html>
